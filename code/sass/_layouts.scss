@@ -1,0 +1,451 @@
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url(../assets/header.jpg);
+  height: 100vh;
+  padding-top: 1rem;
+  background-size: cover;
+  position: relative;
+
+  // header de la page programmes
+  &--programmes {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.45)
+      ),
+      url(../assets/star-wars.jpeg);
+  }
+
+  // header de la page actualités
+
+  &--actualités {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.45)
+      ),
+      url(../assets/actualités.jpg);
+  }
+
+  // header de la page contact
+
+  &--contact {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.45)
+      ),
+      url(../assets/contact.jpg);
+    background-position: center;
+  }
+
+  &__box {
+    color: var(--color-grey-light-1);
+    text-align: center;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fade_up 0.5s ease-out 0.75s backwards;
+
+    @media only screen and (max-width: 75em) {
+      // 1200px = 1200/16px = 75em, J'utilise em au lieu de px
+      // parce que je veux que la media query soit affectée si
+      // l'utilisateur modifie la taille de police par défaut du navigateur.
+
+      width: 65%;
+    }
+
+    @media only screen and (max-width: 47.5em) {
+      // 760px = 760/16px = 47.5em
+
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      // 600px = 600/16px = 37.5em
+
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    // 500px = 500/16px = 31.25em
+    height: 75vh;
+  }
+}
+
+.presentation {
+  width: 70%;
+  margin: auto;
+  padding: 10rem 0;
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @media only screen and (max-width: 43.75em) {
+      // 700px = 700/16px = 43.75em
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    width: 45%;
+    object-fit: cover;
+
+    &--2 {
+      width: 32rem;
+      height: 28rem;
+      position: absolute;
+      top: 36%;
+      left: 19%;
+
+      @media only screen and (max-width: 43.75em) {
+        // 700px = 700/16px = 43.75em
+
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 43.75em) {
+      // 700px = 700/16px = 43.75em
+      width: 90%;
+    }
+  }
+
+  &__text {
+    width: 45%;
+    @media only screen and (max-width: 59.38em) {
+      // 950px = 950/16px = 59.38em
+
+      padding-left: 3rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+      // 700px = 700/16px = 43.75em
+
+      padding-left: 0;
+      margin-top: 3rem;
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 87.5em) {
+    // 1400px = 1400/16px = 75em, J'utilise em au lieu de px
+    // parce que je veux que la requête média soit affectée si
+    //  l'utilisateur modifie la taille de police par défaut du navigateur.
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 68.75em) {
+    // 1100px = 1100/16px = 68.75em
+
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    // 700px = 700/16px = 43.75em
+
+    padding-bottom: 0;
+  }
+}
+
+.latest-movies {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 10rem;
+
+  @media only screen and (max-width: 87.5em) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 68.75em) {
+    // 1100px = 1100/16px = 68.75em
+
+    width: 90%;
+  }
+}
+
+.map {
+  margin: auto;
+  width: 70%;
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: 87.5em) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 68.75em) {
+    // 1100px = 1100/16px = 68.75em
+
+    width: 90%;
+  }
+}
+
+.gallery {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 6vw);
+  grid-gap: 1rem;
+  margin: auto;
+  object-fit: cover;
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    &--1 {
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 2;
+    }
+
+    &--2 {
+      grid-column: 4/ 6;
+      grid-row: 1/4;
+    }
+
+    &--3 {
+      grid-column: 6 / span 2;
+      grid-row: 1 / span 3;
+    }
+
+    &--4 {
+      grid-column: 8/-1;
+      grid-row: 1 / span 2;
+    }
+
+    &--5 {
+      grid-column: 1 / span 3;
+      grid-row: 3/-2;
+    }
+
+    &--6 {
+      grid-column: 4/7;
+      grid-row: 4/-1;
+    }
+
+    &--7 {
+      grid-column: 7/-1;
+      grid-row: 4/-1;
+    }
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    // 500px = 500/16px = 31.25em
+    grid-gap: 0.5rem;
+  }
+}
+
+.footer {
+  background-color: var(--color-grey-dark-1);
+  color: var(--color-grey-light-4);
+  position: relative;
+
+  &__container {
+    width: 70%;
+    margin: auto;
+    padding: 5rem 0;
+    display: flex;
+
+    @media only screen and (max-width: 87.5em) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 68.75em) {
+      // 1100px = 1100/16px = 68.75em
+
+      width: 90%;
+    }
+
+    @media only screen and (max-width: 56.25em) {
+      // 900px = 900/16px = 56.25em
+
+      width: 95%;
+    }
+
+    @media only screen and (max-width: 47.5em) {
+      // 760px = 760/16px = 47.5em
+      flex-direction: column;
+      width: 70%;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      // 500px = 500/16px = 31.25em
+      justify-content: space-between;
+      width: 90%;
+    }
+  }
+
+  &__address-info {
+    text-align: center;
+
+    & > * {
+      margin-bottom: 1.5rem;
+    }
+
+    @media only screen and (max-width: 47.5em) {
+      // 760px = 760/16px = 47.5em
+      margin-top: -4rem;
+    }
+  }
+
+  &__nav {
+    margin-left: 5rem;
+    flex: 1;
+
+    @media only screen and (max-width: 47.5em) {
+      // 760px = 760/16px = 47.5em
+      order: -1;
+      margin-left: 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media only screen and (max-width: 47.5em) {
+      // 760px = 760/16px = 47.5em
+      justify-content: space-between;
+    }
+
+    @media only screen and (max-width: 21.88em) {
+      // 350px = 350/16px = 21.88em
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    @media only screen and (max-width: 21.88em) {
+      // 350px = 350/16px = 21.88em
+      font-size: 1.7rem;
+      &:not(:last-child) {
+        margin-bottom: 3.5rem;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.65rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+
+    &:hover {
+      color: var(--color-grey-light-1);
+    }
+  }
+
+  &__icon {
+    fill: var(--color-grey-light-4);
+    width: 2rem;
+    display: inline-block;
+    margin-top: -6.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:not(:last-child) {
+      margin-right: 1.85rem;
+    }
+
+    &:hover {
+      fill: var(--color-grey-light-1);
+    }
+
+    @media only screen and (max-width: 56.25em) {
+      // 900px = 900/16px = 56.25em
+
+      margin-top: -8rem;
+    }
+
+    @media only screen and (max-width: 47.5em) {
+      // 760px = 760/16px = 47.5em
+      margin-top: -10rem;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      // 500px = 500/16px = 31.25em
+      &:not(:last-child) {
+        margin-right: 1.25rem;
+      }
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: 15%;
+    transform: translateX(-50%);
+    left: 50%;
+
+    @media only screen and (max-width: 47.5em) {
+      // 760px = 760/16px = 47.5em
+      width: 100%;
+      text-align: center;
+      position: relative;
+      left: 0;
+      bottom: 0;
+      transform: translateX(0);
+    }
+  }
+}
+
+// Css de la page programmes
+
+.programmes {
+  width: 70%;
+  margin: auto;
+  padding: 10rem 0;
+
+  @media only screen and (max-width: 87.5em) {
+    // 1400px = 1400/16px = 75em, J'utilise em au lieu de px
+    // parce que je veux que la requête média soit affectée si
+    //  l'utilisateur modifie la taille de police par défaut du navigateur.
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 68.75em) {
+    // 1100px = 1100/16px = 68.75em
+
+    width: 90%;
+  }
+}
+
+.actualités {
+  width: 70%;
+  margin: auto;
+  padding: 10rem 0;
+
+  &__img {
+    width: 50%;
+    height: 40rem;
+    object-fit: cover;
+    display: block;
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 0.85rem;
+  }
+}
+
+.nous-contacter {
+  width: 80%;
+  margin: auto;
+  padding: 10rem 0;
+}

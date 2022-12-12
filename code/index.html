@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__box">
+        <h1 class="title">Festival des films de plein air</h1>
+        <p class="text">Du 05 au 08 août au parc Monceau à Paris</p>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <img src="assets/white-logo.png" class="nav__logo" alt="logo" />
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">Accueil</a>
+          </li>
+          <li class="nav__item">
+            <a href="programmes.html" class="nav__link">Programmes</a>
+          </li>
+          <li class="nav__item">
+            <a href="actualités.html" class="nav__link">Actualités</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="presentation">
+      <h2 class="secondary-title">Festival des films</h2>
+      <div class="presentation__details">
+        <img
+          src="assets/festival.jpg"
+          alt="festival dans le jour"
+          class="presentation__img"
+        />
+        <img
+          src="assets/festival-night.jpg"
+          alt="festival dans la nuit "
+          class="presentation__img presentation__img--2"
+        />
+        <div class="presentation__text">
+          Le festival de plein air de cet été commencera le 05 août pour une
+          durée de 4 jours, chaque soir à partir de 18:00h à minuit, des films
+          d'auteur seront découverts par le grand public au parc Monceau.
+          <br />
+          <br />
+          La présence est gratuite, tous le monde est le bienvenu. Néanmoins,
+          une pré-inscription est nécessaire afin que nous puissions estimer le
+          nombre de personnes présentes et ainsi apporter des améliorations pour
+          être à la hauteur de vos attentes.
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-movies">
+      <h2 class="secondary-title mt">Films récents et populaires</h2>
+      <div class="wrapper">
+        <div class="container">
+          <div class="slider">
+            <img
+              src="assets/man-of-steel.jpeg"
+              alt="man of steel"
+              class="slider__img"
+              id="lastClone"
+            />
+            <img
+              src="assets/sky-fall.jpeg"
+              class="slider__img"
+              alt="sky fall movie"
+            />
+            <img
+              src="assets/true-blood.jpeg"
+              alt="true blood"
+              class="slider__img"
+            />
+            <img src="assets/lost.jpeg" alt="lost" class="slider__img" />
+            <img
+              src="assets/man-of-steel.jpeg"
+              alt="man of steel"
+              class="slider__img"
+            />
+            <img
+              src="assets/sky-fall.jpeg"
+              class="slider__img"
+              alt="sky fall movie"
+              id="firstClone"
+            />
+          </div>
+        </div>
+        <svg class="left-btn" id="prevBtn">
+          <use xlink:href="assets/sprite.svg#icon-ctrl"></use>
+        </svg>
+
+        <svg class="right-btn" id="nextBtn">
+          <use xlink:href="assets/sprite.svg#icon-ctrl"></use>
+        </svg>
+      </div>
+    </section>
+
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8737382034974!2d2.306766315640456!3d48.87968347928959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1670757362237!5m2!1sfr!2sfr"
+        width="500"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="gallery">
+      <img
+        src="assets/13th-friday.jpeg"
+        alt="gallery"
+        class="gallery__picture gallery__picture--1"
+      />
+      <img
+        src="assets/biography-of-bruce-lee.jpeg"
+        alt="gallery"
+        class="gallery__picture gallery__picture--2"
+      />
+      <img
+        src="assets/fast-and-furious.jpeg"
+        alt="gallery"
+        class="gallery__picture gallery__picture--3"
+      />
+      <img
+        src="assets/gladiator.jpeg"
+        alt="gallery"
+        class="gallery__picture gallery__picture--4"
+      />
+      <img
+        src="assets/ironman.jpeg"
+        alt="gallery"
+        class="gallery__picture gallery__picture--5"
+      />
+      <img
+        src="assets/josh-brolin.jpeg"
+        alt="gallery"
+        class="gallery__picture gallery__picture--6"
+      />
+      <img
+        src="assets/lord-of-the-rings.jpeg"
+        alt="gallery"
+        class="gallery__picture"
+      />
+      <img
+        src="assets/lost.jpeg"
+        alt="gallery"
+        class="gallery__picture gallery__picture--7"
+      />
+      <img
+        src="assets/man-of-steel.jpeg"
+        alt="gallery"
+        class="gallery__picture gallery__picture--8"
+      />
+      <img
+        src="assets/pirates-in-the-karibean.jpeg"
+        alt="gallery"
+        class="gallery__picture gallery__picture--9"
+      />
+      <img
+        src="assets/twilight.jpeg"
+        alt="gallery"
+        class="gallery__picture gallery__picture--10"
+      />
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__address-info">
+          <p>Festival des films de plein air</p>
+          <p>+33 123 647 954</p>
+          <p>info@festival.films.fr</p>
+          <p>
+            Parc Monceau
+            <br />
+            35 Bd de Courcelles, 75008 Paris
+          </p>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <div class="footer__box">
+              <li class="footer__item">
+                <a href="/" class="footer__link">Accueil</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Télécharger notre app</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">À propos de nous</a>
+              </li>
+            </div>
+            <div class="footer__box">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Actualités</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">médias</a>
+              </li>
+            </div>
+            <div class="footer__box">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Notre équipe</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Nos partenaires</a>
+              </li>
+              <li class="footer__item">
+                <svg class="footer__icon">
+                  <use xlink:href="assets/sprite.svg#icon-facebook2"></use>
+                </svg>
+                <svg class="footer__icon">
+                  <use xlink:href="assets/sprite.svg#icon-twitter"></use>
+                </svg>
+                <svg class="footer__icon">
+                  <use xlink:href="assets/sprite.svg#icon-instagram"></use>
+                </svg>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <p class="footer__copyright">
+          Copyright &copy; 2022. Tous les droits sont réservés
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

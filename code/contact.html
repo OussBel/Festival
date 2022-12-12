@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header header--contact">
+      <div class="header__box">
+        <h1 class="title">Nous Contacter</h1>
+        <p class="text">Prenez contact avec nous</p>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <img src="assets/white-logo.png" class="nav__logo" alt="logo" />
+          <li class="nav__item">
+            <a href="/" class="nav__link">Accueil</a>
+          </li>
+          <li class="nav__item">
+            <a href="programmes.html" class="nav__link">Programmes</a>
+          </li>
+          <li class="nav__item">
+            <a href="actualités.html" class="nav__link">Actualités</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="nous-contacter">
+        <h2 class="secondary-title text-center mb">
+          Nous Contacter
+        </h2>
+
+        <form action="#" class="contact">
+          <input
+            type="text"
+            class="contact__input contact__input-name"
+            placeholder="Nom"
+            id="name"
+            required
+          />
+          <label for="name" class="contact__label"></label>
+
+          <input
+            type="text"
+            class="contact__input contact__input-phone"
+            placeholder="Téléphone "
+            id="phone"
+          />
+          <label for="phone" class="contact__label"></label>
+          <input
+            type="email"
+            class="contact__input contact__input-email"
+            placeholder="Email "
+            required
+            id="email"
+          />
+
+          <input
+            type="text"
+            class="contact__input contact__input-subject"
+            required
+            id="subject"
+            placeholder="Sujet"
+          />
+
+          <textarea
+            name="message"
+            class="contact__text-area"
+            id="text"
+            required
+            placeholder="Entrez votre message"
+          ></textarea>
+          <button type="submit" class="contact__btn btn">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__address-info">
+          <p>Festival des films de plein air</p>
+          <p>+33 123 647 954</p>
+          <p>info@festival.films.fr</p>
+          <p>
+            Parc Monceau
+            <br />
+            35 Bd de Courcelles, 75008 Paris
+          </p>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <div class="footer__box">
+              <li class="footer__item">
+                <a href="/" class="footer__link">Accueil</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Télécharger notre app</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">À propos de nous</a>
+              </li>
+            </div>
+            <div class="footer__box">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Actualités</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">médias</a>
+              </li>
+            </div>
+            <div class="footer__box">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Notre équipe</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Nos partenaires</a>
+              </li>
+              <li class="footer__item">
+                <svg class="footer__icon">
+                  <use xlink:href="assets/sprite.svg#icon-facebook2"></use>
+                </svg>
+                <svg class="footer__icon">
+                  <use xlink:href="assets/sprite.svg#icon-twitter"></use>
+                </svg>
+                <svg class="footer__icon">
+                  <use xlink:href="assets/sprite.svg#icon-instagram"></use>
+                </svg>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <p class="footer__copyright">
+          Copyright &copy; 2022. Tous les droits sont réservés
+        </p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

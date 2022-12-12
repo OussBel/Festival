@@ -1,0 +1,46 @@
+.title {
+  font-size: 7.25rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 3.5rem;
+  letter-spacing: 4px;
+
+  @media only screen and (max-width: 87.5em) {
+    // 1400px = 1400/16px = 75em, J'utilise em au lieu de px
+    // parce que je veux que la requête média soit affectée si
+    //  l'utilisateur modifie la taille de police par défaut du navigateur.
+    font-size: 6.25rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    // 600px = 600/16px = 37.5em
+
+    font-size: 5.5rem;
+  }
+}
+
+.secondary-title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--color-bleu);
+  margin-bottom: 3rem;
+
+  @media only screen and (max-width: 43.75em) {
+    // 700px = 700/16px = 43.75em
+    text-align: center;
+  }
+}
+
+.tertiary-title {
+  font-size: 2.75rem;
+  color: var(--color-bleu);
+  font-weight: 400;
+  margin-bottom: 6.5rem;
+  text-align: center;
+}
+
+.text {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
